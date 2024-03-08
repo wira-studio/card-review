@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Blog preview card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow: '#F4D04E',
+            grey :'#8F8F8F'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-yellow flex items-center w-screen h-screen">
+    <div role="card" class="bg-white w-[384px] h-[528px] mx-auto rounded-xl shadow-md">
+        <img src="images/illustration-article.svg" class="m-[24px] rounded-lg" alt="">
+        <div class="m-4">
+            <h4 class="bg-yellow font-bold px-8 py-2 rounded-md w-fit">Learning</h4>
+            <p class="mt-4">Published 21 Dec 2023</p>
+        </div>
+        <div class="m-4">
+            <h1 class="font-bold text-2xl">HTML & CSS foundations</h1>
+            <p class="text-grey">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+        <div class="m-4 flex">
+            <img src="images/image-avatar.webp" class="rounded-full w-10" alt="">
+            <p class="font-bold ml-4 my-auto items-center">Greg Hooper</p>
+        </div>
+    </div>
+</body>
+</html>
